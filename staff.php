@@ -14,15 +14,24 @@ $staff = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <p class="lead text-center">No staff</p>
 <?php endif ?>
 
-<?php foreach ($staff as $staff) : ?>
-    <div class="card my-3 w-75">
-        <div class="card-body">
-            <?php echo $staff['name'] ?>
-            <div class="text-secondary mt-2">
-                Email: <?php echo $staff['email'] ?><br>
-                Dept: <?php echo $staff['dept'] ?>
-            </div>
-        </div>
-    </div>
-<?php endforeach ?>
+<table class="table table-striped mt-3">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($staff as $staff) : ?>
+            <tr>
+                <td><?php echo $staff['id'] ?></td>
+                <td><?php echo $staff['name'] ?></td>
+                <td><?php echo $staff['email'] ?></td>
+                <td><?php echo $staff['dept'] ?></td>
+            </tr>
+        <?php endforeach ?>
+    </tbody>
+</table>
 <?php include 'inc/footer.php' ?>

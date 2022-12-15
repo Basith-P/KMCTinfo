@@ -25,7 +25,7 @@
             <a class="nav-link" href="index.php">Add</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="students.php">Staff</a>
+            <a class="nav-link" href="staff.php">Staff</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="students.php">Students</a>

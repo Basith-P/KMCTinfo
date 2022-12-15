@@ -7,23 +7,33 @@ $students = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 
 ?>
-   
-    <h2>Students List</h2>
 
-    <?php if(empty($students)) : ?>
-      <p class="lead text-center">No students</p>
-    <?php endif ?>
+<h2>Students List</h2>
 
-    <?php foreach($students as $student) : ?>
-      <div class="card my-3 w-75">
-        <div class="card-body">
-          <?php echo $student['name'] ?>
-          <div class="text-secondary mt-2">
-            Email: <?php echo $student['email'] ?><br>
-            Dept: <?php echo $student['dept'] ?><br>
-            Year: <?php echo $student['year'] ?>
-          </div>  
-        </div>
-      </div>
+<?php if (empty($students)) : ?>
+  <p class="lead text-center">No students</p>
+<?php endif ?>
+
+<table class="table table-striped mt-3">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Department</th>
+      <th scope="col">Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($students as $student) : ?>
+      <tr>
+        <td><?php echo $student['id'] ?></td>
+        <td><?php echo $student['name'] ?></td>
+        <td><?php echo $student['email'] ?></td>
+        <td><?php echo $student['dept'] ?></td>
+        <td><?php echo $student['year'] ?></td>
+      </tr>
     <?php endforeach ?>
-   <?php include 'inc/footer.php' ?>
+  </tbody>
+</table>
+<?php include 'inc/footer.php' ?>
