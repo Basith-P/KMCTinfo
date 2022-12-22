@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>KMCTians' info</title>
 </head>
 
@@ -24,11 +24,14 @@
           <li class="nav-item">
             <a class="nav-link" href="index.php">Add</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="delete.php">Delete</a>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="staff.php">Staff</a>
+            <a class="nav-link" href="staff.php">Staff List</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="students.php">Students</a>
+            <a class="nav-link" href="students.php">Students List</a>
           </li>
         </ul>
       </div>

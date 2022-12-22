@@ -14,8 +14,9 @@ $students = mysqli_fetch_all($result, MYSQLI_ASSOC);
   <p class="lead text-center">No students</p>
 <?php endif ?>
 
-<table class="table table-striped mt-3">
-  <thead>
+
+<table class="table table-bordered mt-3">
+  <thead class="table-secondary">
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Name</th>
